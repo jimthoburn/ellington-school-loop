@@ -17,7 +17,7 @@ exports.HEAD_ELEMENT_HTML = `
 exports.LOGO_HTML = `
 <a href="/">
   <img src="/images/ellington.png" width="150" alt="" />
-  <h2>Ellington Elementary School</h2>
+  <h2>Ellington K-8 School</h2>
   <p>Home of the Eagles</p>
 </a>
 `;
@@ -25,12 +25,11 @@ exports.LOGO_HTML = `
 exports.FOOTER_HTML = `
 <div class="contact">
   <div>
-    <h2>Ellington Elementary School</h2>
+    <h2>Ellington K-8 School</h2>
     <p>5034 North Clydebank Avenue<br />Covina, CA 91722</p>
     <p>(626) 858-6800</p>
   </div>
-  <p><strong>Shanti Molina, Principal</strong><br /><a href="mailto:smolina@azusa.org">smolina@azusa.org</a></p>
-  <p><strong>Martha Villanueva, School Secretary</strong><br /><a href="mailto:mvillanueva@azusa.org">mvillanueva@azusa.org</a></p>
+  <p><strong>Alexis Norman, Ed.D., Principal</strong></p>
 </div>
 
 <div class="legal">
