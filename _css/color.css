@@ -1,0 +1,45 @@
+
+
+  /* =Color
+  ----------------------------------------------- */
+  :root {
+    --gold: rgb(255, 204, 0);
+    --ocean: rgb(32, 85, 135);
+    --ocean: rgb(46, 127, 182);
+    --dark-ocean: rgb(32, 85, 135);
+
+    --tungsten: rgb(40, 41, 43);
+  }
+
+  :root {
+    --text-color: var(--tungsten);
+    --link-color: var(--dark-ocean);
+    --button-color: var(--dark-ocean);
+    --headline-color: var(--dark-ocean);
+    --nav-background-color: var(--dark-ocean);
+    --nav-color: rgba(255, 255, 255, 0.9);
+  }
+
+  body {
+    background-color: rgba(32, 85, 135, 0.01); /* --ocean */
+    color: var(--text-color);
+  }
+
+  /*
+  main h1,
+  main h2 {
+    color: var(--headline-color);
+  }
+  dt {
+    color: var(--headline-color);
+  }
+  body > nav,
+  body > footer {
+    background-color: var(--ocean);
+    color: rgba(0, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 0.9);
+  }
+  body > nav button {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  */
