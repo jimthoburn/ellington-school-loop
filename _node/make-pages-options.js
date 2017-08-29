@@ -38,7 +38,7 @@ exports.FOOTER_HTML = `
 </div>
 `;
 
-exports.SITE_MAP_URL = 'http://ees-ausd-ca.schoolloop.com/portal/site_map?d=x&return_url=1501782867421';
+exports.SITE_MAP_URL = 'http://ees-ausd-ca.schoolloop.com/portal/site_map?d=x';
 
 exports.SECTIONS_DATA = [{
   title: 'Main Pages',
@@ -46,11 +46,8 @@ exports.SECTIONS_DATA = [{
     {
       url: '/',
       title: 'Home'
-    }/*,
-    {
-      url: '/cms/month?d=x&group_id=1301752510526&month_id=0',
-      title: 'Calendar'
     }
-    */
   ]
 }];
+
+exports.REDIRECT_NAV_TO_FIRST_SUB_ITEM = true;

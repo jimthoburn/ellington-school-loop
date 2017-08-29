@@ -162,7 +162,7 @@
   }
   #container_header img,
   #container_home_header img {
-  	display: block;
+    display: block;
     float: left;
     height: 4.5em;
     width: auto;
@@ -170,7 +170,7 @@
   }
   #container_header h2,
   #container_home_header h2 {
-  	margin-top: 0.75em;
+    margin-top: 0.75em;
     font-weight: inherit;
 
     font-family: "Roboto Slab", "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
@@ -224,8 +224,6 @@
     width: 5.25em;
     height: 5.25em;
   }
-
-
 
   .nav_public {
     height: auto;
@@ -344,7 +342,7 @@
     width: auto !important;
   }
   table[style*="width"] #block_hub_right {
-  	padding-right: 20px;
+    padding-right: 20px;
   }
 
   table[cellpadding] {
@@ -365,3 +363,4 @@
   table img {
     border-width: 0 !important;
   }
+

@@ -3,26 +3,89 @@
   /* =Color
   ----------------------------------------------- */
   :root {
-    --gold: rgb(255, 204, 0);
-    --ocean: rgb(32, 85, 135);
-    --ocean: rgb(46, 127, 182);
-    --dark-ocean: rgb(32, 85, 135);
+    --dark-blue: rgb(18, 36, 47);
+    --light-blue: rgb(145, 178, 198);
 
     --tungsten: rgb(40, 41, 43);
   }
 
   :root {
     --text-color: var(--tungsten);
-    --link-color: var(--dark-ocean);
-    --button-color: var(--dark-ocean);
-    --headline-color: var(--dark-ocean);
-    --nav-background-color: var(--dark-ocean);
+    --link-color: var(--dark-blue);
+    --button-color: var(--dark-blue);
+    --headline-color: var(--dark-blue);
+    --nav-background-color: var(--dark-blue);
     --nav-color: rgba(255, 255, 255, 0.9);
   }
 
   body {
-    background-color: rgba(32, 85, 135, 0.01); /* --ocean */
+    background-color: rgba(145, 178, 198, 0.01); /* --light-blue */
     color: var(--text-color);
+  }
+
+  /* Hide the logo on the home page */
+  .header_table tr + tr {
+    display: none;
+  }
+  img[alt="spirit.png"] {
+    display: none;
+  }
+
+  /* Override styles intended for the current website */
+  .header_logo {
+    float: none !important;
+    width: auto !important;
+    margin-bottom: 2em;
+  }
+  .header_logo + div {
+    float: none !important;
+    width: auto !important;
+    height: auto !important;
+  }
+  .header_table .right_top {
+    position: absolute;
+    top: 2.25em;
+    right: 1.5em;
+    width: auto;
+  }
+  .header_table .right_top div[style="float: left"] {
+    display: none;
+  }
+  .header_table .right_top td[style="padding: 0px 0px 0px 3px; vertical-align: middle;"] {
+    padding-left: 0.75em !important;
+  }
+  #container_content_home,
+  #container_content {
+    background: #ffffff;
+    background-image: none;
+  }
+  .content01 h2 {
+    margin: 0px 0px 5px 0px;
+    padding: 2px 10px 0px 3px;
+    border-bottom: 2px #aaaaaa solid;
+  }
+  .content01,
+  .content02,
+  .content03 {
+    background: transparent;
+  }
+
+  /* The “nav_public” element is located inside the “container_header” element 
+  on this particular website */
+  .nav_public {
+    padding: 0 20px;
+    margin-left: -1.5em;
+    margin-right: -1.5em;
+  }
+  #container_header,
+  #container_home_header {
+    padding-bottom: 0 !important;
+  }
+
+  /* Override styles in shared.css */
+  #container_header img,
+  #container_home_header img {
+    margin-top: -0.75em;
   }
 
   /*
