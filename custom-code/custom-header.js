@@ -69,14 +69,12 @@
     }
 
     function getPageCategory(className) {
-      return 'students';
-      /*
       if (titleHas('Staff')) {
         return 'staff';
       } else if (titleHas('Parents')) {
         return 'parents';
-      } else if (titleHas('PBIS')) {
-        return 'pbis';
+      } else if (titleHas('News')) {
+        return 'news';
       } else if (titleHas(
                   'Our School'
                 )) {
@@ -84,7 +82,6 @@
       } else {
         return 'students';
       }
-      */
     }
 
     var category = getPageCategory();

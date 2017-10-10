@@ -39,11 +39,15 @@
     background: linear-gradient(to top, rgba(0, 0, 0, 0.1), transparent);
   }
 
+  /*
   @media (min-width: 1000px) {
+  */
     #container_header::after {
       top: -1.5em;
     }
+  /*
   }
+  */
 
   #container_home_header {
     background-image: url(images/students.png) !important;
@@ -71,35 +75,29 @@
     background-position: center !important;
   }
 
-  /*
-
   .azusa-about #container_header {
-    background-position: center !important;
-    background-image: url(images/writing.jpg) !important;
+    background-image: url(images/athletics-2.png), url(images/home-of-the-eagles.jpg) !important;
+    background-position: 120px 100%, top right !important;
+    background-size: auto 85%, cover !important;
+    background-repeat: no-repeat;
   }
 
   .azusa-staff #container_header {
-    background-image: url(images/classroom-2.jpg) !important;
+    background-image: url(images/students.jpg) !important;
     background-position: center !important;
   }
 
   .azusa-parents #container_header {
-    background-image: url(images/paint.jpg) !important;
-    background-position: center !important;
-  }
-
-  .azusa-pbis #container_header {
-    background-image: url(images/lunch.jpg) !important;
+    background-image: url(images/student.jpg) !important;
     background-position: center !important;
   }
 
   .azusa-news #container_header {
-    background-image: url(images/athletics.jpg) !important;
-    background-position: 50% 25% !important;
-
-    height: 55vh !important;
-    min-height: 45vw;
+    background-image: url(images/student.jpg) !important;
+    background-position: center !important;
   }
+
+  /*
 
   .azusa-activities #container_header {
     background-image: url(images/photos/aHR0cDovL2docy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTM1NjYxMjg2NjM4Ni8xMzQ1Mjc5MTU3MDQxLzE0ODU2ODI3NjUzMDQuanBnP2Nyb3BUb3A9MzMmY3JvcFJpZ2h0PTkwMCZjcm9wQm90dG9tPTYzMyZjcm9wTGVmdD0xMDAmYmFzaXNXaWR0aD0xMDAw.jpeg) !important;
