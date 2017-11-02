@@ -161,17 +161,14 @@
   }
 
 
-  
 
-  
-    
-       #container_header {
-        background-image: url(../uploads/teacher.jpg) !important;
-        background-position: center !important;
+  #container_header {
+    background-image: url(../uploads/teacher.jpg) !important;
+    background-position: center !important;
+  }
 
-        
-      }
-    
+
+
   
 
   
@@ -184,9 +181,7 @@
     
   
 
-  
     
-      
       [data-azusa-uri*="ourschool"] #container_header {
         background-image: url(../uploads/athletics.png), url(../uploads/home-of-the-eagles.jpg) !important;
         background-position: center !important;
@@ -200,27 +195,26 @@
   
 
   
-    
-      
-      [data-azusa-uri*="parents"] #container_header {
-        background-image: url(../uploads/student.jpg) !important;
-        background-position: center !important;
 
-        
+
+
+  
+      /* If the client supports object fit,  position it above the default banner image and crop it using object fit and height */
+      @supports(object-fit: cover) {
+        #page_title + #block_wide_main > .block_content_main > div > div[style="width: 100%; width: 700px"] > img[width="700"] {
+          position: absolute;
+          top: 3em;
+          left: 0;
+          width: 100%;
+          height: 25vh;
+          object-fit: cover;
+          height: 45vh !important;
+          min-height: 25vw;
+        }
       }
-    
-  
 
-  
-    
-      
-      [data-azusa-uri*="pgk3"] #container_header {
-        background-image: url(../uploads/teacher.jpg) !important;
-        background-position: center !important;
+      /* Or crop it using a container div, if available, to support more browsers. */
 
-        
-      }
-    
-  
+
 
 

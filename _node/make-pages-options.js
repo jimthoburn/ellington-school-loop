@@ -20,10 +20,10 @@ exports.HEAD_ELEMENT_HTML = `
 </script>
 
 <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i|Source+Sans+Pro:400,400i,700,700i" rel="stylesheet" />
-<link rel="stylesheet" href="http://jimthoburn.github.io/ellington-custom-code/assets/shared.css" />
-<link rel="stylesheet" href="http://jimthoburn.github.io/ellington-custom-code/assets/custom.css">
+<link rel="stylesheet" href="/custom-code/assets/shared.css" />
+<link rel="stylesheet" href="/custom-code/assets/custom.css">
 
-<script src="http://jimthoburn.github.io/ellington-custom-code/assets/shared.js"></script>
+<script src="/custom-code/assets/shared.js"></script>
 `;
 
 /*

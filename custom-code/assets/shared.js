@@ -64,6 +64,17 @@
   (function() {
     try {
       document.documentElement.setAttribute('data-azusa-uri', window.location.pathname);
+
+      // Check to see if the page HTML matches a certain pattern (the HTML that we expect to see on School Loop 1.0)
+      // If it does match, look for an image that appears right after the main headline
+      // If that image is found, update it’s URL from w700 to w2000
+      document.addEventListener('DOMContentLoaded', function() {
+        var image = document.querySelector('#page_title + #block_wide_main > .block_content_main > div > div[style="width: 100%; width: 700px"] > img[width="700"]');
+        if (image) {
+          image.setAttribute('src', image.getAttribute('src').replace('w700', 'w2000'));          
+        }
+      });
+
     } catch(e) {
       if (console && console.error) console.error(e);
     }
