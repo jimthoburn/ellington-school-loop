@@ -1,10 +1,13 @@
 
-/*  (function() {
+  // Remove the custom style sheet, if the user is signed in
+  (function() {
     var timer;
     function check() {
-      if (document.getElementById('cms_tools_top')) {
-        var stylesheet = document.querySelector('link[href*="jimthoburn.github.io"]');
-        if (stylesheet) stylesheet.parentNode.removeChild(stylesheet);
+      if ( document.getElementById('public_site') || document.getElementById('cms_tools_top')) {
+        var stylesheets = document.querySelectorAll('link[href*="jimthoburn.github.io"]');
+        for (var index = 0; index < stylesheets.length; index++) {
+          stylesheets[index].parentNode.removeChild(stylesheets[index]);
+        }
       }
       clearInterval(timer);
     }
@@ -13,7 +16,8 @@
       check();
       clearInterval(timer);
     });
-  })();*/
+  })();
+
 
 /*  (function() {
     if (window.location.host === 'ahs-ausd-ca.schoolloop.com' && document.head) {
@@ -54,20 +58,45 @@
     }
   })();*/
 
+
+
+
+  (function() {
+    try {
+      document.documentElement.setAttribute('data-azusa-uri', window.location.pathname);
+    } catch(e) {
+      if (console && console.error) console.error(e);
+    }
+  })();
+
+
+
+
   // Wait for the page to load, and update the HTML.
-  document.addEventListener('DOMContentLoaded', function() {
+  //document.addEventListener('DOMContentLoaded', function() {
+
+
+
+
+    /*
     var title = document.getElementById('page_title')
     if (!title) return;
 
-    title = title.textContent;
 
+    title = title.textContent;
+    */
+
+    /*
     function titleHas() {
       for (var index = 0; index < arguments.length; index++) {
         if (title.indexOf(arguments[index]) >= 0) return true;
       }
       return false;
     }
+    */
 
+
+    /*
     function getPageCategory(className) {
       if (titleHas('Staff')) {
         return 'staff';
@@ -86,68 +115,15 @@
 
     var category = getPageCategory();
     if (category) document.body.classList.add('azusa-' + getPageCategory());
+    */
 
     // Get a reference to the header element
     // Update the HTML
 
     // Get a reference to the footer element
     // Update the HTML
-  });
+  //});
 
-
-/*  document.addEventListener('DOMContentLoaded', function() {
-
-    var images = [
-      'https://jimthoburn.github.io/azusa-custom-code/images/football.jpg',
-      'https://jimthoburn.github.io/azusa-custom-code/images/band.jpg',
-      'https://jimthoburn.github.io/azusa-custom-code/images/student-body.jpg',
-      'https://jimthoburn.github.io/azusa-custom-code/images/graduates.jpg',
-      'https://jimthoburn.github.io/azusa-custom-code/images/football-2.jpg',
-      'https://jimthoburn.github.io/azusa-custom-code/images/singers.jpg',
-      'https://jimthoburn.github.io/azusa-custom-code/images/avid.jpg',
-      'https://jimthoburn.github.io/azusa-custom-code/images/staff.jpg',
-      //'https://jimthoburn.github.io/azusa-custom-code/images/girls-golf.jpg',
-      'https://jimthoburn.github.io/azusa-custom-code/images/singers-2.jpg',
-      //'https://jimthoburn.github.io/azusa-custom-code/images/staff-2.jpg',
-      'https://jimthoburn.github.io/azusa-custom-code/images/best-buddies.jpg',
-      //'https://jimthoburn.github.io/azusa-custom-code/images/rotc.jpg',
-      'https://jimthoburn.github.io/azusa-custom-code/images/students.jpg'
-    ];
-
-    var cursor = 0;
-    var image = document.getElementById('container_home_header');
-    if (!image) return;
-
-    var preloader = new Image();
-    var imageListener = preloader.addEventListener('load', update);
-
-    var timer;
-    var stopped = false;
-    function update() {
-      if (stopped) return;
-
-      image.setAttribute('style', 'background-image: url(' + images[cursor] + ') !important');
-
-      if (timer) clearTimeout(timer);
-      timer = setTimeout(preloadNext, 7000);
-    }
-
-    function preloadNext() {
-      if (stopped) return;
-
-      cursor++;
-      if (cursor >= images.length) cursor = 0;
-      preloader.src = images[cursor];
-    }
-
-    timer = setTimeout(preloadNext, 7000);
-
-    window.azusa = window.azusa || {};
-    window.azusa.stopHomeSlideshow = function() {
-      if (timer) clearTimeout(timer);
-      stopped = true;
-    }
-  });*/
 
   // Replace the placeholder image with a video element, if the link to the video has been pressed
   document.addEventListener('DOMContentLoaded', function() {

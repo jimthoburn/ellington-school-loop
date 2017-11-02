@@ -676,7 +676,10 @@
     align-items: center;
     padding-bottom: 3em;
   }
+  .azusa-home-introduction .video-container,
+  .azusa-home-introduction video,
   .azusa-home-introduction iframe {
+    background: black;
     position: absolute;
     width: 100% !important;
     height: 100% !important;
