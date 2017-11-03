@@ -4,20 +4,7 @@
 exports.BASE_URL = 'http://ees-ausd-ca.schoolloop.com';
 
 exports.HEAD_ELEMENT_HTML = `
-<!--
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
--->
-
 <meta name="robots" content="noindex" />
-
-<!--
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i|Roboto+Slab:100,300,400,700" />
-<link rel="stylesheet" href="/css/shared.css" />
--->
-
-<script type="text/template" id="azusa-home-video-template">
-  <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/jGFqTpDBO90?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-</script>
 
 <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i|Source+Sans+Pro:400,400i,700,700i" rel="stylesheet" />
 <link rel="stylesheet" href="/custom-code/assets/shared.css" />
